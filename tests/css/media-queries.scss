@@ -1,0 +1,63 @@
+.mobile-small-portrait {
+    background-color: red;
+    height: 50px;
+    @include mobile-small-portrait {
+        background-color: green;
+    }
+}
+
+.mobile-small-landscape {
+    background-color: red;
+    height: 50px;
+    @include mobile-small-landscape {
+        background-color: green;
+    }
+}
+
+.mobile-large-portrait {
+    background-color: red;
+    height: 50px;
+    @include mobile-large-portrait {
+        background-color: green;
+    }
+}
+
+.tablet-portrait {
+    background-color: red;
+    height: 50px;
+    @include tablet-portrait {
+        background-color: green;
+    }
+}
+
+.tablet-landscape {
+    background-color: red;
+    height: 50px;
+    @include tablet-landscape {
+        background-color: green;
+    }
+}
+
+.desktop {
+    background-color: red;
+    height: 50px;
+    @include desktop {
+        background-color: green;
+    }
+}
+
+.tablet {
+    background-color: red;
+    height: 50px;
+    @include tablet {
+        background-color: green;
+    }
+}
+
+.mobile {
+    background-color: red;
+    height: 50px;
+    @include mobile {
+        background-color: green;
+    }
+}

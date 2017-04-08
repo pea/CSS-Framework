@@ -1,0 +1,35 @@
+form {
+    .select-container {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        cursor: pointer;
+        .arrow {
+            position: absolute;
+            z-index: 11;
+            top: 50%;
+            right: 13px;
+            width: 12px;
+            height: 8px;
+            margin: -3px 0 0 0;
+            background-color: #e0e0e0;
+
+            -webkit-clip-path: polygon(0 0, 100% 0, 50% 75%);
+                    clip-path: polygon(0 0, 100% 0, 50% 75%);
+        }
+        select {
+            width: 130%;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            background-image: none;
+            box-shadow: none;
+
+            -webkit-appearance: none;
+        }
+        select:focus {
+            outline: none;
+        }
+    }
+}

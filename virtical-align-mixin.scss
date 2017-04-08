@@ -1,0 +1,24 @@
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.valign-container {
+    position: relative;
+}
+.valign-relative {
+    @include vertical-align();
+}
+.valign-absolute {
+    @include vertical-align(absolute);
+}
+@mixin valign-disable() {
+    position: static !important;
+    top: auto !important;
+    -webkit-transform: translateY(0) !important;
+        -ms-transform: translateY(0) !important;
+            transform: translateY(0) !important;
+}

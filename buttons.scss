@@ -1,0 +1,42 @@
+@mixin button-container($size) {
+    &-top {
+        margin: 0 0 #{$size} 0;
+    }
+    &-middle {
+        margin: #{$size} 0;
+    }
+    &-bottom {
+        margin: #{$size} 0 0 0;
+    }
+}
+
+.button-container {
+    &-small {
+        @include button-container($buttonContainerSmall);
+    }
+    &-medium {
+        @include button-container($buttonContainerMedium);
+    }
+    &-large {
+        @include button-container($buttonContainerLarge);
+    }
+}
+
+.button {
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    .primary {
+
+    }
+    .secondary {
+
+    }
+    .three {
+
+    }
+    .four {
+
+    }
+}

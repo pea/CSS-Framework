@@ -1,0 +1,27 @@
+@mixin padding($size) {
+    margin: #{$size};
+    &-top-bottom {
+        margin: #{$size} 0;
+    }
+    &-left-right {
+        margin: #{$size} 0;
+    }
+    &-left {
+        margin: 0 0 0 #{$size};
+    }
+    &-right {
+        margin: 0 #{$size} 0 0;
+    }
+}
+
+.padding {
+    &-small {
+        @include padding($paddingSmall);
+    }
+    &-medium {
+        @include padding($paddingMedium);
+    }
+    &-large {
+        @include padding($paddingLarge);
+    }
+}

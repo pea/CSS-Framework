@@ -1,0 +1,18 @@
+/**
+ * Responsive element with a fixed ratio.
+ * Example: @include responsive-ratio(2,1, true);
+ */
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+    $padding: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+        &:before {
+            content: '';
+            display: block;
+            position: relative;
+            width: 100%;
+            padding-top: $padding;
+        }
+    } @else {
+        padding-top: $padding;
+    }
+}

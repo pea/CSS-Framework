@@ -1,0 +1,6 @@
+.tests .test {
+    font-size: 0;
+    overflow: auto;
+    letter-spacing: 0;
+    border: 1px solid #f5f5f5;
+}
